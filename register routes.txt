@@ -1,0 +1,7 @@
+const livestockRoutes = require('./routes/livestock');
+
+// Middleware to parse JSON
+app.use(express.json());
+
+// Use the routes
+app.use('/api/livestock', livestockRoutes);
